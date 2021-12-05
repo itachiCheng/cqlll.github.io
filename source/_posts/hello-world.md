@@ -1,6 +1,6 @@
 ---
 title: Hello World
-top_img: /img/Ulchiha.png
+top_img: Ulchiha.png
 categories:
 - Hexo_Guide
 ---
