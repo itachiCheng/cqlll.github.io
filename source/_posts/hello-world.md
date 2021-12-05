@@ -1,6 +1,6 @@
 ---
 title: Hello World
-default_top_img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+default_index_img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
 categories:
 - Hexo_Guide
 ---
