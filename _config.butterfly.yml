@@ -84,8 +84,8 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /img/Ulchiha.png
-  effect: false
+  img: /img/favicon.png
+#  effect: false
 
 # Disable all banner image
 disable_top_img: false
