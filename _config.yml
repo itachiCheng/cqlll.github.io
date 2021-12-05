@@ -4,17 +4,17 @@
 
 # Site
 title: 图灵先生的光
-subtitle: ''
-description: ''
-keywords:
+subtitle: stay hungry, stay foolish.
+description: The only way to do great work is to love what you do. Keep looking, and don't settle.
+keywords: Love
 author: ChengQiang
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://github.com/CQLLL
-permalink: :year/:month/:day/:title/
+url: https://cqlll.github.io
+permalink: :category/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
