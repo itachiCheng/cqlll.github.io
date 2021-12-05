@@ -84,7 +84,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: /img/favicon.png
   effect: false
 
 # Disable all banner image
@@ -646,7 +646,7 @@ aside:
       link: https://github.com/CQLLL
   card_announcement:
     enable: true
-    content: Hello
+    content: I'm busy now.
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
