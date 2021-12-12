@@ -5,5 +5,5 @@ categories:
 tags:
 - knowledge
 - website
-top_img: /img/Ulchiha.png
+cover: /img/Ulchiha.png
 ---
