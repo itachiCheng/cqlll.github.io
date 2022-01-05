@@ -173,6 +173,10 @@ class Solution(object):
 
 [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
 
+[26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)
+
+[80. 删除有序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii)
+
 [844. 比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare/)
 
 [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array)
