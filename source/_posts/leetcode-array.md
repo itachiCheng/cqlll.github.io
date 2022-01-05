@@ -5,6 +5,7 @@ tags:
 - leetcode
 categories:
 - [Coding]
+cover: graph.png
 ---
 
 
