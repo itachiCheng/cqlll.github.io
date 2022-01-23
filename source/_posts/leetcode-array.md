@@ -171,6 +171,8 @@ class Solution(object):
         return self.backspace(s) == self.backspace(t)
 ```
 
+#### 练习模板
+
 [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
 
 [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)
