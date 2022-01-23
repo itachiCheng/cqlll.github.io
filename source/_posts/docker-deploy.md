@@ -1,7 +1,8 @@
 ---
 title: docker-deploy
 date: 2022-01-09 22:55:44
-tags: 
+categories:
+- Docker
 ---
 
 - [Download Docker](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)

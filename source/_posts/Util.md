@@ -1,7 +1,9 @@
 ---
-title: Something Useful
+title: Util
 date: 2022-01-23 18:13:45
-tags: Tool
+tags:
+categories:
+- Tool 
 cover: Ulchiha.png
 ---
 
