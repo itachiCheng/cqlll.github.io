@@ -15,16 +15,15 @@ cover: Ulchiha.png
 
 SQLite是一个嵌入式SQL数据库引擎。与大多数其他SQL数据库不同（例如MySql），SQLite没有单独的服务器进程，SQLite直接读写普通磁盘文件。Anaconda中已经有了SQLite的相应版本，因此可以直接调用sqlite3模块来对接相应的API接口。
 
-![image-20220123214313577](C:\Users\Alan\AppData\Roaming\Typora\typora-user-images\image-20220123214313577.png)
+![image-20220123214313577](image-20220123214313577.png)
 
-![image-20220123214408549](C:\Users\Alan\AppData\Roaming\Typora\typora-user-images\image-20220123214408549.png)
+![image-20220123214408549](image-20220123214408549.png)
 
 - 建库
 
 ```Python
 import sqlite3
 from sqlite3 import Error
-
 
 def create_connection(db_file):
     """ create a database connection to a SQLite database """
@@ -37,7 +36,6 @@ def create_connection(db_file):
     finally:
         if conn:
             conn.close()
-
 
 if __name__ == '__main__':
     create_connection(r"C:\Docs\[---SQL---]\pythonsqlite.db")
@@ -146,7 +144,6 @@ def create_table(conn, weather):
     sql = """INSERT INTO weather(id,logTime,humidity,temp,type)
 		     VALUES(?,?,?,?,?)
           """
-
     try:
         c = conn.cursor()
         c.execute(sql, wheather)
