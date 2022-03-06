@@ -1,5 +1,5 @@
 ---
-title: Array——LeetCode
+title: leetcode-array
 date: 2022-01-05 18:48:37
 tags:
 - leetcode

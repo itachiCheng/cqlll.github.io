@@ -1,9 +1,7 @@
 ---
-title: Graph——LeetCode
+title: leetcode-graph
 date: 2022-01-02 14:41:37
 tags:
-categories:
-- [Coding]
 cover: graph.png
 ---
 ## 997. [找到小镇的法官](https://leetcode-cn.com/problems/find-the-town-judge)

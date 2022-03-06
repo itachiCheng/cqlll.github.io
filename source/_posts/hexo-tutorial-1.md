@@ -1,5 +1,5 @@
 ---
-title: Hexo Tutorial
+title: Hexo_Tutorial
 categories:
 - [Tutorial]
 tags:
