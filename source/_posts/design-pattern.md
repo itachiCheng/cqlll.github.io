@@ -1,5 +1,5 @@
 ---
-title: design-pattern
+title: 设计模式综述
 categories:
 - Software Engineering
 cover: design_pattern.jpg
