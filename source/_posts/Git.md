@@ -42,3 +42,4 @@ Git仓库是存取文件快照的地方，所有和版本控制相关的指令�
 
 使用Git可以使我们不必关心更改的内容，但需要更加留意”更改“这件事。如果我们对文件状态变化非常熟悉，那么就能很好地操作版本管理。
 [Todo planuml]
+![The lifecycle of the status of your files](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/CQLLL/cqlll.github.io/source/source/_posts/Git/Status_Transfer.puml)
