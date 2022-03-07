@@ -1,5 +1,5 @@
 ---
-title: class-diagram
+title: Class Diagram
 categories:
 - Software Engineering
 cover: design_pattern.jpg
