@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cqlll.github.io/Class%20Diagram/</loc>
+    
+    <lastmod>2022-07-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cqlll.github.io/Autobiography/</loc>
     
     <lastmod>2022-06-23</lastmod>
@@ -119,15 +128,6 @@
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/Class%20Diagram/</loc>
-    
-    <lastmod>2022-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://cqlll.github.io/leetcode-array/</loc>
     
     <lastmod>2022-03-06</lastmod>
@@ -175,7 +175,7 @@
 
   <url>
     <loc>https://cqlll.github.io/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -183,21 +183,21 @@
   
   <url>
     <loc>https://cqlll.github.io/tags/Autobiography/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/tags/NLP/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/tags/leetcode/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -206,70 +206,70 @@
   
   <url>
     <loc>https://cqlll.github.io/categories/Yesterday/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/categories/Machine-Learning/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/categories/Software-Engineering/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/categories/Docker/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/categories/Hexo-Guide/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/categories/Computer-History/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/categories/SQL/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/categories/Tool/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/categories/Data-Mining/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://cqlll.github.io/categories/Coding/</loc>
-    <lastmod>2022-06-23</lastmod>
+    <lastmod>2022-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
