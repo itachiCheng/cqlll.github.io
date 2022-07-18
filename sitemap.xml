@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/leetcode-array/</loc>
+    <loc>https://cqlll.github.io/leetcode-graph/</loc>
     
     <lastmod>2022-03-06</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/leetcode-graph/</loc>
+    <loc>https://cqlll.github.io/leetcode-array/</loc>
     
     <lastmod>2022-03-06</lastmod>
     
@@ -219,14 +219,14 @@
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/categories/Software-Engineering/</loc>
+    <loc>https://cqlll.github.io/categories/Docker/</loc>
     <lastmod>2022-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/categories/Docker/</loc>
+    <loc>https://cqlll.github.io/categories/Software-Engineering/</loc>
     <lastmod>2022-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -254,14 +254,14 @@
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/categories/Tool/</loc>
+    <loc>https://cqlll.github.io/categories/Data-Mining/</loc>
     <lastmod>2022-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/categories/Data-Mining/</loc>
+    <loc>https://cqlll.github.io/categories/Tool/</loc>
     <lastmod>2022-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
