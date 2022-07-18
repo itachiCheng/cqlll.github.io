@@ -343,9 +343,9 @@
     <link href="https://cqlll.github.io/Docker/"/>
     <id>https://cqlll.github.io/Docker/</id>
     <published>2022-01-09T14:55:44.000Z</published>
-    <updated>2022-04-14T16:28:25.777Z</updated>
+    <updated>2022-07-18T04:06:28.947Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><a href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe">Download Docker</a><br>docker 下载地址，点击OK即可，稍等完成下载。<br><img src="docker_install_1.png" alt="img.png"></li><li>Enable the WSL 2 feature on Windows</li></ul><p>最近工作中接触了docker，开始试着敲了一些docker指令。</p><p><code>docker images</code>：列出docker镜像</p><p><code>docker ps</code>: 列出当前正在运行的docker容器</p><p><code>docker cp .../ .../ </code>：从宿主机或docker容器中拷贝文件到docker容器或宿主机当中</p><p><code>docker start containerId</code> ：启动docker容器</p><p><code>docker attach containerId</code>：进入docker容器</p><p>我想这相当于最基本的查看操作，同时借鉴面向对象中类和实例的关系，对docker的理解停留在抽象层。想钻研其背景，多看总是很好的途径。</p><center>卷一</center><h6 id="docker-与-虚拟机">docker 与 虚拟机</h6><p><code>Docker is just cgroups and namespace wrappedd up.</code> 这句话虽然对docker的描述已经深入到系统中的用户组和命名空间，但很难有直观的感受。</p>]]></content>
+    <content type="html"><![CDATA[<ul><li><a href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe">Download Docker</a><br>docker 下载地址，点击OK即可，稍等完成下载。<br><img src="docker_install_1.png" alt="img.png"></li><li>Enable the WSL 2 feature on Windows</li></ul><p>最近工作中接触了docker，开始试着敲了一些docker指令。</p><p><code>docker images</code>：列出docker镜像</p><p><code>docker ps</code>: 列出当前正在运行的docker容器</p><p><code>docker cp .../ .../ </code>：从宿主机或docker容器中拷贝文件到docker容器或宿主机当中</p><p><code>docker start containerId</code> ：启动docker容器</p><p><code>docker attach containerId</code>：进入docker容器</p><p>我想这相当于最基本的查看操作，同时借鉴面向对象中类和实例的关系，对docker的理解停留在抽象层。想钻研其背景，多看总是很好的途径。</p><center>卷一</center><h6 id="Docker-versus-virtual-machines">Docker versus virtual machines</h6><p><code>Docker is just cgroups and namespace wrappedd up.</code> 这句话出自<a href="https://www.docker.com/blog/investing-in-performance-trust-and-great-experiences-for-developers/">JUSTIN CORMACK</a> ，他认为从docker这九年来发展来看，重要的远不止这些。<br><code>docker run -it ubuntu</code>The time-to-magic is so short, and there is so much you can build on from there.<br>的确，现在围绕Docker, Kubernetes 和 更加广泛的云原生运动正在展开。</p><p>Docker处于现代软件供应链的核心，并且有三个方向值得努力——Performance、Trust and Experience.</p>]]></content>
     
     
       
