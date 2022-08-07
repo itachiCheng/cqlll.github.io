@@ -28,8 +28,7 @@ docker 下载地址，点击OK即可，稍等完成下载。
 
 ###### Docker versus virtual machines 
 
-`Docker is just cgroups and namespace wrappedd up.` 这句话出自[JUSTIN CORMACK](https://www.docker.com/blog/investing-in-performance-trust-and-great-experiences-for-developers/) ，他认为从docker这九年来发展来看，重要的远不止这些。
-`docker run -it ubuntu`The time-to-magic is so short, and there is so much you can build on from there.
+`Docker is just cgroups and namespace wrappedd up.` 这句话出自[JUSTIN CORMACK](https://www.docker.com/blog/investing-in-performance-trust-and-great-experiences-for-developers/) ，他认为从docker这九年来发展来看，重要的远不止这些。`docker run -it ubuntu`The time-to-magic is so short, and there is so much you can build on from there.
 的确，现在围绕Docker, Kubernetes 和 更加广泛的云原生运动正在展开。
 
 Docker处于现代软件供应链的核心，并且有三个方向值得努力——Performance、Trust and Experience.
