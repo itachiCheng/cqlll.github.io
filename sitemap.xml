@@ -221,13 +221,6 @@
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/categories/Machine-Learning/</loc>
-    <lastmod>2022-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cqlll.github.io/categories/Software-Engineering/</loc>
     <lastmod>2022-08-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -242,6 +235,13 @@
   </url>
   
   <url>
+    <loc>https://cqlll.github.io/categories/Machine-Learning/</loc>
+    <lastmod>2022-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://cqlll.github.io/categories/Hexo-Guide/</loc>
     <lastmod>2022-08-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -250,6 +250,13 @@
   
   <url>
     <loc>https://cqlll.github.io/categories/Computer-History/</loc>
+    <lastmod>2022-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cqlll.github.io/categories/SQL/</loc>
     <lastmod>2022-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -278,13 +285,6 @@
   
   <url>
     <loc>https://cqlll.github.io/categories/Coding/</loc>
-    <lastmod>2022-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cqlll.github.io/categories/SQL/</loc>
     <lastmod>2022-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
