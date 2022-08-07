@@ -6,7 +6,7 @@
   <link href="https://cqlll.github.io/atom.xml" rel="self"/>
   
   <link href="https://cqlll.github.io/"/>
-  <updated>2022-06-12T11:52:26.906Z</updated>
+  <updated>2022-08-07T03:50:17.215Z</updated>
   <id>https://cqlll.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cookbook</title>
+    <link href="https://cqlll.github.io/cookbook/"/>
+    <id>https://cqlll.github.io/cookbook/</id>
+    <published>2022-08-07T03:05:14.000Z</published>
+    <updated>2022-08-07T03:50:17.215Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="蒜香虾仁技术总结（源自美食作家王刚）">蒜香虾仁技术总结（源自美食作家王刚）</h3><ul><li>鲜虾500g冰箱急冻40分钟</li></ul><ol><li>方便前段剥壳，挤出虾尾，防止壳肉粘连；</li><li>挑出虾线去除杂质；</li><li>放入盆中清洗，清洗之后将其横刀切成两片备用；</li></ol><ul><li>开始腌制</li></ul><ol><li>适量料酒（约3克）；</li><li>适量生抽酱油（约3克）；</li><li>食用盐半勺；</li><li>少许胡椒粉；</li><li>适量的白糖搅拌均匀；</li><li>加入处理好的虾仁搅拌均匀，中途加入适量的玉米淀粉拌匀腌制五分钟；</li></ol><ul><li>准备辅料</li></ul><ol><li>大蒜100克拍散剁碎备用，最好能剁碎一些；</li><li>准备蒜苗1根，取下蒜叶之后切碎备用；</li><li>二荆条和小米辣切碎备用；</li></ol><ul><li>开始制作</li></ul><ol><li>在锅中加入适量的清水，然后加入蒜蓉焯水，将其烧开后再捞出，目的是煮熟和去除蒜蓉里面的淀粉，防止炸糊；</li><li>加入适量的油烧热，加入淀粉炸香炸黄，淡黄色即可捞出；</li><li>留下少许炸蒜蓉的油烧热，然后将腌制好的虾仁下锅煎熟，中途翻面；</li><li>煎熟之后加入料头和蒜蓉翻炒均匀；</li></ol><ul><li>出锅装盘</li></ul><h3 id="水煮肉片技术总结（改编自美食作家王刚）">水煮肉片技术总结（改编自美食作家王刚）</h3><p>此篇记录省略了</p><ul><li>准备猪肉并腌制</li></ul><ol><li>猪里脊肉300克，切成2mm薄片放入碗中清洗两遍，去除肉片中的血水和杂质；</li><li>碗中加入食用盐一勺，加入胡椒粉一克，加入生抽酱油5克，加入料酒3克朝着一个方向搅拌两分钟；</li><li>调鸡蛋糊，碗中加入鸡蛋清一个，加入三勺土豆淀粉，搅拌均匀；</li><li>鸡蛋糊和肉片一起搅拌均匀，形成锁水的润滑膜；</li><li>加入植物油拌匀备用；</li></ol><ul><li>准备辅料</li></ul><ol><li>准备油麦菜一颗，切三段备用；</li><li>准备芹菜几根，切成小段备用；</li><li>准备蒜苗两根轻轻拍散，切成小段备用；</li><li>准备大蒜20克，切碎备用，准备生姜切片备用；</li></ol><ul><li><p>准备刀口辣椒（省略，直接用老干妈代替）</p></li><li><p>开始制作</p></li></ul><ol><li>加入适量的底油，油温6成热后加入配菜爆炒20秒，炒至断生；</li><li>再次加入适量的底油，油温6成热后加入辅料和老干妈，开大火爆炒料头爆香；</li><li>然后加入清水烧开，将腌制好的肉片下锅，烫熟之后捞出摆盘；</li><li>肉片和配菜装盘后加入适量的原汤；</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;蒜香虾仁技术总结（源自美食作家王刚）&quot;&gt;蒜香虾仁技术总结（源自美食作家王刚）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;鲜虾500g冰箱急冻40分钟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;方便前段剥壳，挤出虾尾，防止壳肉粘连；&lt;/li&gt;
+&lt;li&gt;挑出虾线去除杂质；&lt;/li&gt;
+</summary>
+      
+    
+    
+    
+    <category term="Life" scheme="https://cqlll.github.io/categories/Life/"/>
+    
+    
+    <category term="Autobiography" scheme="https://cqlll.github.io/tags/Autobiography/"/>
+    
+  </entry>
   
   <entry>
     <title>Flask</title>
