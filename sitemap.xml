@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://cqlll.github.io/Memory-HangZhou/</loc>
+    
+    <lastmod>2022-08-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://cqlll.github.io/Docker/</loc>
     
     <lastmod>2022-07-18</lastmod>
@@ -59,15 +68,6 @@
     <loc>https://cqlll.github.io/Pythonic/</loc>
     
     <lastmod>2022-05-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cqlll.github.io/Memory-HangZhou/</loc>
-    
-    <lastmod>2022-05-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -191,14 +191,14 @@
 
   
   <url>
-    <loc>https://cqlll.github.io/tags/Autobiography/</loc>
+    <loc>https://cqlll.github.io/tags/NLP/</loc>
     <lastmod>2022-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/tags/NLP/</loc>
+    <loc>https://cqlll.github.io/tags/Autobiography/</loc>
     <lastmod>2022-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -214,13 +214,6 @@
 
   
   <url>
-    <loc>https://cqlll.github.io/categories/Yesterday/</loc>
-    <lastmod>2022-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cqlll.github.io/categories/Machine-Learning/</loc>
     <lastmod>2022-08-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -229,6 +222,13 @@
   
   <url>
     <loc>https://cqlll.github.io/categories/Software-Engineering/</loc>
+    <lastmod>2022-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cqlll.github.io/categories/Yesterday/</loc>
     <lastmod>2022-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
