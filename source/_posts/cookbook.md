@@ -5,6 +5,9 @@ tags:
 - Autobiography
 categories:
 - Life
+
+cover: cookbook/cookbook.jpg
+
 ---
 
 
