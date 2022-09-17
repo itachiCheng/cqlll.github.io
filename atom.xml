@@ -6,7 +6,7 @@
   <link href="https://cqlll.github.io/atom.xml" rel="self"/>
   
   <link href="https://cqlll.github.io/"/>
-  <updated>2022-09-17T02:28:36.907Z</updated>
+  <updated>2022-09-17T03:03:47.885Z</updated>
   <id>https://cqlll.github.io/</id>
   
   <author>
@@ -21,17 +21,17 @@
     <link href="https://cqlll.github.io/Non-deterministic-Polynomial/"/>
     <id>https://cqlll.github.io/Non-deterministic-Polynomial/</id>
     <published>2022-09-16T13:55:15.000Z</published>
-    <updated>2022-09-17T02:28:36.907Z</updated>
+    <updated>2022-09-17T03:03:47.885Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="多项式时间的算法">多项式时间的算法</h3><p>对于规模为n的输入，在最坏情况下的运行时间是O($n^k$)，k为某一确定的常数。并不是所有问题都可以在多项式时间内解决。</p><p>图灵停机问题</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">H</span><span class="params">(procedure, Input)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">U</span><span class="params">(P)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// H(P,P) == 0时则跳出循环，程序正常结束；H(P,P)==1时则进入死循环中。</span></span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">H</span>(P, P))&#123;&#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>问是否存在过程H(P,I)可以判断对于程序P在输入I的情况下是否可停机。构造出U§这个函数可以导出矛盾：</p><ul><li>假设H(U, U)输出“停机” -&gt; U(U)进入死循环，但此时H(U, U)代表程序U在输入为U的情况下判定输出为“停机”。</li><li>假设H(U, U)输出死循环 -&gt; U(U)停机：两者一样矛盾。</li></ul><p>同样的还有“理发师悖论”和“停机测试悖论”，本质上来讲，这是递归过程中对象重叠的成环效应。</p><script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true});</script><div class="mermaid">graph TD;    A-->B;    B-->A';</div>]]></content>
+    <content type="html"><![CDATA[<h3 id="多项式时间的算法">多项式时间的算法</h3><p>对于规模为n的输入，在最坏情况下的运行时间是O($n^k$)，k为某一确定的常数，也称P类问题。并不是所有问题都可以在多项式时间内解决。</p><p>图灵停机问题</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">H</span><span class="params">(procedure, Input)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">U</span><span class="params">(P)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// H(P,P) == 0时则跳出循环，程序正常结束；H(P,P)==1时则进入死循环中。</span></span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">H</span>(P, P))&#123;&#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>问是否存在过程H(P,I)可以判断对于程序P在输入I的情况下是否可停机。构造出U§这个函数可以导出矛盾：</p><ul><li>假设H(U, U)输出“停机” -&gt; U(U)进入死循环，但此时H(U, U)代表程序U在输入为U的情况下判定输出为“停机”。</li><li>假设H(U, U)输出死循环 -&gt; U(U)停机：两者一样矛盾。</li></ul><p>同样的还有“理发师悖论”和“停机测试悖论”，本质上来讲，这是递归过程中对象重叠的成环效应。</p><script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true});</script><div class="mermaid">graph TD;    A(自己理发的理发师)-->|触发'不理发'|B(不自己理发的理发师);    B-->|触发'理发'|A'(自己理发的理发师);    A'--> ...</div><p>我们无法确定“理发师”究竟是属于“自己理发”还是“不自己理发”的状态，只能通过扩充维度（时间）来说，“诶，这个理发师有一段时间是自己理发的”，“呀，这个理发师这几个月没有自己理发”，因而计算机无法在多项式时间内求得一个确定的解。</p><div class="mermaid">graph TD;    A(自己理发的理发师)-->|触发'不理发'|B(不自己理发的理发师);    B-->|触发'理发'|A(自己理发的理发师);</div>]]></content>
     
     
       
       
     <summary type="html">&lt;h3 id=&quot;多项式时间的算法&quot;&gt;多项式时间的算法&lt;/h3&gt;
-&lt;p&gt;对于规模为n的输入，在最坏情况下的运行时间是O($n^k$)，k为某一确定的常数。并不是所有问题都可以在多项式时间内解决。&lt;/p&gt;
+&lt;p&gt;对于规模为n的输入，在最坏情况下的运行时间是O($n^k$)，k为某一确定的常数，也称P类问题。并不是所有问题都可以在多项式时间内解决。&lt;/p&gt;
 &lt;p&gt;图灵停机问题&lt;/p&gt;
-&lt;figure class=&quot;highlight </summary>
+&lt;figure class=&quot;hig</summary>
       
     
     
