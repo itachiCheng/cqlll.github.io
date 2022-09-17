@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/leetcode-array/</loc>
+    <loc>https://cqlll.github.io/leetcode-graph/</loc>
     
     <lastmod>2022-03-06</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/leetcode-graph/</loc>
+    <loc>https://cqlll.github.io/leetcode-array/</loc>
     
     <lastmod>2022-03-06</lastmod>
     
@@ -209,14 +209,14 @@
 
   
   <url>
-    <loc>https://cqlll.github.io/tags/Autobiography/</loc>
+    <loc>https://cqlll.github.io/tags/NLP/</loc>
     <lastmod>2022-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/tags/NLP/</loc>
+    <loc>https://cqlll.github.io/tags/Autobiography/</loc>
     <lastmod>2022-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -232,14 +232,14 @@
 
   
   <url>
-    <loc>https://cqlll.github.io/categories/Yesterday/</loc>
+    <loc>https://cqlll.github.io/categories/Machine-Learning/</loc>
     <lastmod>2022-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/categories/Machine-Learning/</loc>
+    <loc>https://cqlll.github.io/categories/Yesterday/</loc>
     <lastmod>2022-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
