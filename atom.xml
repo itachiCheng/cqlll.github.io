@@ -6,7 +6,7 @@
   <link href="https://cqlll.github.io/atom.xml" rel="self"/>
   
   <link href="https://cqlll.github.io/"/>
-  <updated>2022-08-13T15:24:31.940Z</updated>
+  <updated>2022-09-17T02:20:02.431Z</updated>
   <id>https://cqlll.github.io/</id>
   
   <author>
@@ -17,11 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Non-deterministic_Polynomial</title>
+    <link href="https://cqlll.github.io/Non-deterministic-Polynomial/"/>
+    <id>https://cqlll.github.io/Non-deterministic-Polynomial/</id>
+    <published>2022-09-16T13:55:15.000Z</published>
+    <updated>2022-09-17T02:20:02.431Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="多项式时间的算法">多项式时间的算法</h3><p>对于规模为n的输入，在最坏情况下的运行时间是O($n^k$)，k为某一确定的常数。并不是所有问题都可以在多项式时间内解决。</p><p>图灵停机问题</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">H</span><span class="params">(procedure, Input)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">U</span><span class="params">(P)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// H(P,P) == 0时则跳出循环，程序正常结束；H(P,P)==1时则进入死循环中。</span></span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">H</span>(P, P))&#123;&#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>问是否存在过程H(P,I)可以判断对于程序P在输入I的情况下是否可停机。构造出U§这个函数可以导出矛盾：</p><ul><li>假设H(U, U)输出“停机” -&gt; U(U)进入死循环，但此时H(U, U)代表程序U在输入为U的情况下判定输出为“停机”。</li><li>假设H(U, U)输出死循环 -&gt; U(U)停机：两者一样矛盾。</li></ul><p>同样的还有“理发师悖论”和“停机测试悖论”，本质上来讲，这是递归过程中对象重叠的成环效应。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;多项式时间的算法&quot;&gt;多项式时间的算法&lt;/h3&gt;
+&lt;p&gt;对于规模为n的输入，在最坏情况下的运行时间是O($n^k$)，k为某一确定的常数。并不是所有问题都可以在多项式时间内解决。&lt;/p&gt;
+&lt;p&gt;图灵停机问题&lt;/p&gt;
+&lt;figure class=&quot;highlight </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Approximation_Algorithm</title>
+    <link href="https://cqlll.github.io/Approximation-Algorithm/"/>
+    <id>https://cqlll.github.io/Approximation-Algorithm/</id>
+    <published>2022-09-16T13:52:00.000Z</published>
+    <updated>2022-09-16T13:52:00.106Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Cookbook</title>
     <link href="https://cqlll.github.io/cookbook/"/>
     <id>https://cqlll.github.io/cookbook/</id>
     <published>2022-08-07T03:05:14.000Z</published>
-    <updated>2022-08-13T15:24:31.940Z</updated>
+    <updated>2022-08-21T05:00:06.397Z</updated>
     
     <content type="html"><![CDATA[<h3 id="蒜香虾仁技术总结（源自美食作家王刚）">蒜香虾仁技术总结（源自美食作家王刚）</h3><ul><li>鲜虾500g冰箱急冻40分钟</li></ul><ol><li>方便前段剥壳，挤出虾尾，防止壳肉粘连；</li><li>挑出虾线去除杂质；</li><li>放入盆中清洗，清洗之后将其横刀切成两片备用；</li></ol><p><img src="suanrong_1.jpg" alt=""></p><ul><li>开始腌制</li></ul><ol><li>适量料酒（约3克）；</li><li>适量生抽酱油（约3克）；</li><li>食用盐半勺；</li><li>少许胡椒粉；</li><li>适量的白糖搅拌均匀；</li><li>加入处理好的虾仁搅拌均匀，中途加入适量的玉米淀粉拌匀腌制五分钟；</li></ol><p><img src="suanrong_2.jpg" alt=""></p><ul><li>准备辅料</li></ul><ol><li>大蒜100克拍散剁碎备用，最好能剁碎一些；</li><li>准备蒜苗1根，取下蒜叶之后切碎备用；</li><li>二荆条和小米辣切碎备用；</li></ol><ul><li>开始制作</li></ul><ol><li>在锅中加入适量的清水，然后加入蒜蓉焯水，将其烧开后再捞出，目的是煮熟和去除蒜蓉里面的淀粉，防止炸糊；<br><img src="suanrong_3.jpg" alt=""></li><li>加入适量的油烧热，加入淀粉炸香炸黄，淡黄色即可捞出；</li><li>留下少许炸蒜蓉的油烧热，然后将腌制好的虾仁下锅煎熟，中途翻面；</li><li>煎熟之后加入料头和蒜蓉翻炒均匀；</li></ol><p><img src="suanrong_4.jpg" alt=""></p><ul><li>出锅装盘</li></ul><p><img src="suanrong_5.jpg" alt=""></p><h3 id="水煮肉片技术总结（改编自美食作家王刚）">水煮肉片技术总结（改编自美食作家王刚）</h3><p>此篇记录省略了“刀口辣椒”的制作。</p><ul><li>准备猪肉并腌制</li></ul><ol><li>猪里脊肉300克，切成2mm薄片放入碗中清洗两遍，去除肉片中的血水和杂质；</li><li>碗中加入食用盐一勺，加入胡椒粉一克，加入生抽酱油5克，加入料酒3克朝着一个方向搅拌两分钟；</li><li>调鸡蛋糊，碗中加入鸡蛋清一个，加入三勺土豆淀粉，搅拌均匀；</li><li>鸡蛋糊和肉片一起搅拌均匀，形成锁水的润滑膜；</li><li>加入植物油拌匀备用；</li></ol><ul><li>准备辅料</li></ul><ol><li>准备油麦菜一颗，切三段备用；</li><li>准备芹菜几根，切成小段备用；</li><li>准备蒜苗两根轻轻拍散，切成小段备用；</li><li>准备大蒜20克，切碎备用，准备生姜切片备用；</li></ol><ul><li><p>准备刀口辣椒（省略，直接用老干妈代替）</p></li><li><p>开始制作</p></li></ul><ol><li>加入适量的底油，油温6成热后加入配菜爆炒20秒，炒至断生；</li><li>再次加入适量的底油，油温6成热后加入辅料和老干妈，开大火爆炒料头爆香；</li><li>然后加入清水烧开，将腌制好的肉片下锅，烫熟之后捞出摆盘；</li><li>肉片和配菜装盘后加入适量的原汤；</li></ol><h3 id="葱香牛肉技术总结（源自美食作家王刚）">葱香牛肉技术总结（源自美食作家王刚）</h3><ul><li>主料</li></ul><ol><li>外脊牛肉（350克）<ul><li>切成8mm薄片，横竖敲打备用；<br><img src="shuizhuniurou_1.jpg" alt=""><br><img src="shuizhuniurou_2.jpg" alt=""></li><li>清洗去除血水；<br><img src="shuizhuniurou_3.jpg" alt=""></li></ul></li></ol><ul><li>辅料</li></ul><ol><li>玉米淀粉（约2克）</li><li>土豆淀粉（15克）</li><li>植物油（适量）</li><li>大葱（120克）</li><li>大红椒（1个）</li><li>生姜（25克）</li><li>大蒜（几颗）</li><li>水淀粉（适量）</li></ol><ul><li>调味料</li></ul><ol><li><p>蚝油（适量）</p></li><li><p>生抽酱油（适量）</p></li><li><p>食用盐（少许）</p></li><li><p>老抽（适量）</p><ul><li>腌制牛肉，耗油三克，生成酱油三克，食用盐1.5克，老抽三克，清水15克；<br><img src="shuizhuniurou_5.jpg" alt=""></li></ul></li></ol><h3 id="家常豆腐（懒人烧豆腐加王刚版家常豆腐）">家常豆腐（懒人烧豆腐加王刚版家常豆腐）</h3><ul><li>准备原料</li></ul><ol><li>五花肉（16yuan/斤）</li><li>蒜叶（7yuan/斤）</li><li>老豆腐（4yuan/jin）<br><img src="jiachangdoufu_2.jpg" alt=""></li></ol><ul><li>准备调料</li></ul><ol><li>生抽三克</li><li>食盐1.5克</li><li>白糖1.5克</li><li>淀粉适量<br><img src="jiachangdoufu_1.jpg" alt=""></li></ol><ul><li><p>开始制作<br><img src="jiachangdoufu_3.jpg" alt=""></p><ul><li><p>技术难点</p><p>豆腐煎6分钟后第一次翻面，非常考验对锅的控制，不少豆腐挤成一团，如上所示；</p></li></ul></li><li><p>成品展示</p></li></ul><p><img src="jiachangdoufu_4.jpg" alt=""></p>]]></content>
     
@@ -440,52 +476,6 @@ docker 下载地址，点击OK即可，稍等完</summary>
     
     
     <category term="Hexo_Guide" scheme="https://cqlll.github.io/categories/Hexo-Guide/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>设计模式</title>
-    <link href="https://cqlll.github.io/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    <id>https://cqlll.github.io/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
-    <published>2022-01-02T07:03:11.319Z</published>
-    <updated>2022-03-07T16:19:31.254Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="design_pattern.jpg" alt=""></p><h3 id="面向对象设计五大心法（The-Heart）">面向对象设计五大心法（The Heart）</h3><ul><li>The Single Responsibility Principle(单一职责原则)——SRP</li><li>The Open Closed Principle(开放封闭原则)——OCP</li><li>The Liskov Substitution Principle(Liskov替换原则)——LSP</li><li>The Interface Segregation Principle(接口隔离原则)——ISP</li><li>The Dependency Inversion Principle(依赖倒置原则)——DIP</li></ul><p><strong>SOLID = High Conhesion Loose Couple</strong></p><h4 id="单一职责原则">单一职责原则</h4><h5 id="6-Responsibilities-of-Object">6 Responsibilities of Object</h5><ul><li>Information holder<br>作为存储对象并提供对象信息给其他对象</li><li>Interfacer<br>在系统的各部分之间转化信息（或请求）</li><li>Structurer<br>维护对象之间的结构关系</li><li>Service provider<br>执行工作处理并提供给其他对象</li><li>Controller<br>控制决策一系列的任务处理</li><li>Coordinator<br>不作工作处理，只代理工作到其它对象上。</li></ul><h5 id="Rectangle-Class-Design-Question">Rectangle Class Design Question</h5><p>拆成两个部分，命令行应用程序只管计算，变化朝着依赖的反方向传递，永远要依赖于比较稳定的东西，之所以强调于依赖抽象，是因为抽象更加稳定。</p><p>SRP:What is Responsibility?<br>Responsibility = “a reason for change.”</p><h5 id="Modoem-Non-SRP-Design">Modoem Non-SRP Design</h5><p>Extract Class<br><strong>某个类做了应该由两个类做的事情</strong>，建立一个新类，将相关的值域和函数从旧类搬移到新类</p><p>CalculateRent()函数怎么写(没必要赌需求，哈哈哈，等需求来的时候再作设计，第一版怎么简单怎么写)</p><h4 id="开放封闭原则">开放封闭原则</h4><h3 id="重构的基本招式">重构的基本招式</h3><h4 id="Rename">Rename</h4><p>为什么要做Rename重构，软件生命周期的成本包含需求、设计、实现、测试和维护，其中维护占比最大。</p><h5 id="为名字加上单位">为名字加上单位</h5><ul><li>Start(int delay) --&gt; Start(int delay_secs)</li><li>CreateCache(int size) --&gt; CreateCache(int size_mb)</li><li>ThrottleDownload(float limit) --&gt; ThrottleDownload(float max_kbps)</li><li>Rotate(float angle) --&gt; Rotate(float degrees_cw)</li></ul><h5 id="附带其他重要属性">附带其他重要属性</h5><ul><li>password --&gt; plaintext_password 纯文本密码，需要加密</li><li>comment --&gt; unsecaped_comment 用户输入，需要转义</li><li>html --&gt; html_utf8 已经转换为UTF-8的html</li><li>data --&gt; data_urlenc 以url方式编码的数据</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;design_pattern.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;面向对象设计五大心法（The-Heart）&quot;&gt;面向对象设计五大心法（The Heart）&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The Single Responsibility Pr</summary>
-      
-    
-    
-    
-    <category term="Software Engineering" scheme="https://cqlll.github.io/categories/Software-Engineering/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>leetcode-graph</title>
-    <link href="https://cqlll.github.io/leetcode-graph/"/>
-    <id>https://cqlll.github.io/leetcode-graph/</id>
-    <published>2022-01-02T06:41:37.000Z</published>
-    <updated>2022-03-06T11:40:39.211Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="997-找到小镇的法官">997. <a href="https://leetcode-cn.com/problems/find-the-town-judge">找到小镇的法官</a></h2><p>在一个小镇里，按从 1 到 n 为 n 个人进行编号。传言称，这些人中有一个是小镇上的秘密法官。</p><p>如果小镇的法官真的存在，那么：</p><ul><li>小镇的法官不相信任何人。</li><li>每个人（除了小镇法官外）都信任小镇的法官。</li><li>只有一个人同时满足条件 1 和条件 2 。</li></ul><p>给定数组 trust，该数组由信任对 trust[i] = [a, b] 组成，表示编号为 a 的人信任编号为 b 的人。</p><p>如果小镇存在秘密法官并且可以确定他的身份，请返回该法官的编号。否则，返回 -1。</p><p><img src="graph.png" alt=""></p><h3 id="解析">解析</h3><p>在如上有向图中，d满足题干中所给的三个条件，条件1表明节点的出度应当为零，条件2表明节点的入度应当为n-1,同时能满足上述条件的节点必然只有一个。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">PYTHON</span><br><span class="line"></span><br><span class="line">## 解法1，常规处理：</span><br><span class="line">class Solution(object):</span><br><span class="line">    def findJudge(self, n, trust):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type n: int</span><br><span class="line">        :type trust: List[List[int]]</span><br><span class="line">        :rtype: int</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        nodeIn, nodeOut = [0] * n, [0] * n</span><br><span class="line">        for node in trust:</span><br><span class="line">            nodeOut[node[0]-1]+=1</span><br><span class="line">            nodeIn[node[1]-1]+=1</span><br><span class="line">        for i in range(n):</span><br><span class="line">            if nodeOut[i]==0 and nodeIn[i]==n-1:</span><br><span class="line">                return i + 1</span><br><span class="line">            </span><br><span class="line">        return -1</span><br><span class="line">## 解法2，偏贪心的处理，出度不为零则一定不是法官，减少了出度的累加计算：</span><br><span class="line">class Solution(object):</span><br><span class="line">    def findJudge(self, n, trust):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type n: int</span><br><span class="line">        :type trust: List[List[int]]</span><br><span class="line">        :rtype: int</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        array = [0] * n</span><br><span class="line">        ans = []</span><br><span class="line">        for num in trust:</span><br><span class="line">            array[num[1]-1] += 1 </span><br><span class="line">        for index,nums in enumerate(array):</span><br><span class="line">            if nums == n - 1:</span><br><span class="line">                ans.append(index+1)</span><br><span class="line">        if len(ans) != 1:</span><br><span class="line">            return -1</span><br><span class="line">        for check in trust:</span><br><span class="line">            if check[0] == ans[0]:</span><br><span class="line">                return -1</span><br><span class="line">        return ans[0]</span><br></pre></td></tr></table></figure><hr><h1>拓扑排序</h1><ul><li>构建邻接矩阵</li><li></li></ul><h2 id="207-课程表">207. <a href="https://leetcode-cn.com/problems/course-schedule/">课程表</a></h2><p>你这个学期必须选修 numCourses 门课程，记为 0 到 numCourses - 1 。</p><p>在选修某些课程之前需要一些先修课程。 先修课程按数组 prerequisites 给出，其中 prerequisites[i] = [ai, bi] ，表示如果要学习课程 ai 则 必须 先学习课程 bi 。</p><p>例如，先修课程对 [0, 1] 表示：想要学习课程 0 ，你需要先完成课程 1 。<br>请你判断是否可能完成所有课程的学习？如果可以，返回 true ；否则，返回 false 。</p><h3 id="解析-2">解析</h3><p>通过检测有向闭环，采用深度优先搜索进行求解：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">PYTHON</span><br><span class="line">class Solution:</span><br><span class="line">    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -&gt; bool:</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type numCourses: int</span><br><span class="line">        :type prerequisites: List[List[int]]</span><br><span class="line">        :rtype: bool</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        ## 检测环结构</span><br><span class="line">        valid = True        </span><br><span class="line">        visited = [0] * numCourses</span><br><span class="line">        adj = collections.defaultdict(list) ## [[]] * numCourses是一种浅拷贝</span><br><span class="line">        for edge in prerequisites:</span><br><span class="line">            adj[edge[1]].append(edge[0])</span><br><span class="line">        def dfs(node):</span><br><span class="line">            nonlocal valid</span><br><span class="line">            visited[node] = 1</span><br><span class="line">            for n in adj[node]:</span><br><span class="line">                if visited[n] == 0:</span><br><span class="line">                    dfs(n)</span><br><span class="line">                    if not valid:</span><br><span class="line">                        return</span><br><span class="line">                elif visited[n] == 1:</span><br><span class="line">                    valid = False</span><br><span class="line">                    return</span><br><span class="line">            visited[node] = 2</span><br><span class="line">        for i in range(numCourses):</span><br><span class="line">            if valid and visited[i] == 0:</span><br><span class="line">                dfs(i)</span><br><span class="line">        return valid</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;997-找到小镇的法官&quot;&gt;997. &lt;a href=&quot;https://leetcode-cn.com/problems/find-the-town-judge&quot;&gt;找到小镇的法官&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;在一个小镇里，按从 1 到 n 为 n 个人进行编号。传言称，</summary>
-      
-    
-    
     
     
   </entry>
