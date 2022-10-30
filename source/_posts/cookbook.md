@@ -85,10 +85,10 @@ cover: cookbook/cookbook.jpg
 
 1. 外脊牛肉（350克） 
    - 切成8mm薄片，横竖敲打备用；
-![](cookbook/shuizhuniurou_1.jpg)
-![](cookbook/shuizhuniurou_2.jpg)
+![](shuizhuniurou_1.jpg)
+![](shuizhuniurou_2.jpg)
    - 清洗去除血水；
-![](cookbook/shuizhuniurou_3.jpg)
+![](shuizhuniurou_3.jpg)
      
     
 
@@ -111,7 +111,7 @@ cover: cookbook/cookbook.jpg
 4. 老抽（适量）
    
    - 腌制牛肉，耗油三克，生成酱油三克，食用盐1.5克，老抽三克，清水15克；
-     ![](cookbook/shuizhuniurou_5.jpg)
+     ![](shuizhuniurou_5.jpg)
 
      
 ### 家常豆腐（懒人烧豆腐加王刚版家常豆腐）
@@ -119,7 +119,7 @@ cover: cookbook/cookbook.jpg
 1. 五花肉（16yuan/斤） 
 2. 蒜叶（7yuan/斤） 
 3. 老豆腐（4yuan/jin）
-![](cookbook/jiachangdoufu_2.jpg)
+![](jiachangdoufu_2.jpg)
 
    
 - 准备调料
@@ -127,10 +127,10 @@ cover: cookbook/cookbook.jpg
 2. 食盐1.5克
 3. 白糖1.5克 
 4. 淀粉适量
-![](cookbook/jiachangdoufu_1.jpg)
+![](jiachangdoufu_1.jpg)
 
 - 开始制作
-![](cookbook/jiachangdoufu_3.jpg)
+![](jiachangdoufu_3.jpg)
   
     - 技术难点
     
@@ -139,7 +139,9 @@ cover: cookbook/cookbook.jpg
 
 - 成品展示
   
-![](cookbook/jiachangdoufu_4.jpg)
+![](jiachangdoufu_4.jpg)
+
+
 
 
 

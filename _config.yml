@@ -70,9 +70,9 @@ deploy:
   repo: https://github.com/CQLLL/cqlll.github.io.git
   branch: master
   repository: git@github.com:CQLLL/cqlll.github.io.git
-markdown_it_plus:
+markdown:
   plugins:
     - plugin:
-        name: '@neilsustc/markdown-it-katex'
-        enable: true
-        output: html
+      name: '@neilsustc/markdown-it-katex'
+      options:
+        strict: false
