@@ -272,3 +272,271 @@ if user.type == UserType.VLP:
 
 ```
 
+## <center>Static and Class Methods</center>
+
+对于无实例化的类方法调用，可以归结为staticmethod和classmethod。
+
+```python
+
+## A class'method is normally passed an instance object in its first argument, to serve as the implied subject of the method call—that’s the “object” in “object-oriented programming.” —— 类是对象的抽象，对象是类的实例，这里的self是代表实例的形参。
+class Spam:
+    numInstances = 0
+    def __init__(self):
+        Spam.numInstances = Spam.numInstances + 1
+    def printNumInstances():
+        print("Number of instances created: %s" % Spam.numInstances)
+           
+```
+
+那么，什么时候需要无实例化的类方法调用？`Consider keeping track of the number of instances created from a class, or maintaining a list of all of a class’s instances that are currently in memory. `即数据处理位于整个类空间时，我们不需要实例化调用。
+
+事实上，在类外定义这样的参数空间也可以保持数据处理在一个全局维度，但是将这样的类方法设计在类内可以灵活应用继承特性，从而达到同样的效果。
+
+在此之前，明确一下Python 2.X和Python 3.X关于绑定类方法的区别：
+
+- Both Python 2.X and 3.X produce a bound method when a method is fetched through an instance.
+- In Python 2.X, fetching a method from a class produces an unbound method, which  cannot be called without manually passing an instance.
+- In Python 3.X, fetching a method from a class produces a simple function, which can be called normally with no instance present.
+
+```shell
+C:\code> c:\python27\python
+>>> from spam import Spam
+>>> a = Spam() # Cannot call unbound class methods in 2.X
+>>> b = Spam() # Methods expect a self object by default
+>>> c = Spam()
+>>> Spam.printNumInstances()
+TypeError: unbound method printNumInstances() must be called with Spam instance
+as first argument (got nothing instead)
+>>> a.printNumInstances()
+TypeError: printNumInstances() takes no arguments (1 given)	
+```
+
+```shell
+C:\code> c:\python33\python
+>>> from spam import Spam
+>>> a = Spam() # Can call functions in class in 3.X
+>>> b = Spam() # Calls through instances still pass a self
+>>> c = Spam()
+>>> Spam.printNumInstances() # Differs in 3.X
+Number of instances created: 3
+>>> a.printNumInstances()
+TypeError: printNumInstances() takes 0 positional arguments but 1 was given
+
+```
+
+```python
+Spam.printNumInstances() # Fails in 2.X, works in 3.X
+instance.printNumInstances() # Fails in both 2.X and 3.X (unless static)
+```
+
+
+
+### Static Method Alternatives：
+
+- #### outside the class
+
+```python
+def printNumInstances():
+ print("Number of instances created: %s" % Spam.numInstances)
+class Spam:
+ numInstances = 0
+ def __init__(self):
+ Spam.numInstances = Spam.numInstances + 1
+
+```
+
+```shell
+C:\code> c:\python33\python
+>>> import spam
+>>> a = spam.Spam()
+>>> b = spam.Spam()
+>>> c = spam.Spam()
+>>> spam.printNumInstances() # But function may be too far removed
+Number of instances created: 3 # And cannot be changed via inheritance
+>>> spam.Spam.numInstances
+3
+
+```
+
+- #### through an instance
+
+```python
+class Spam:
+ numInstances = 0
+ def __init__(self):
+ Spam.numInstances = Spam.numInstances + 1
+ def printNumInstances(self):
+ print("Number of instances created: %s" % Spam.numInstances)
+```
+
+```shell
+C:\code> c:\python33\python
+>>> from spam import Spam
+>>> a, b, c = Spam(), Spam(), Spam()
+>>> a.printNumInstances()
+Number of instances created: 3
+>>> Spam.printNumInstances(a)
+Number of instances created: 3
+>>> Spam().printNumInstances() # But fetching counter changes counter!
+Number of instances created: 4
+```
+
+技术上，Python现在支持三种类相关方法，包含如下不同的参数协议：
+
+- Instance methods, passed a **self** instance object(the default)
+- Static methods, passed no extra object(via **staticmethod**)
+- Class methods, passed a class object(via **classmethod**, and inherent in metaclasses)
+
+### 1. Static Method
+
+Static Methods never receive an automatic **self** argument, whether called through a class or an instance.
+
+```python
+class Spam:
+ numInstances = 0 # Use static method for class data
+ def __init__(self):
+        Spam.numInstances += 1
+ def printNumInstances():
+        print("Number of instances: %s" % Spam.numInstances)
+        printNumInstances = staticmethod(printNumInstances)
+```
+
+Both in Python2.X and 3.X:
+
+```shell
+>>> from spam_static import Spam
+>>> a = Spam()
+>>> b = Spam()
+>>> c = Spam()
+>>> Spam.printNumInstances() # Call as simple function
+Number of instances: 3
+>>> a.printNumInstances() # Instance argument not passed
+Number of instances: 3
+
+```
+
+```python
+class Sub(Spam):
+ def printNumInstances(): # Override a static method
+ print("Extra stuff...") # But call back to original
+ Spam.printNumInstances()
+ printNumInstances = staticmethod(printNumInstances)
+
+```
+
+```shell
+>>> from spam_static import Spam, Sub
+>>> a = Sub()
+>>> b = Sub()
+>>> a.printNumInstances() # Call from subclass instance
+Extra stuff...
+Number of instances: 2
+>>> Sub.printNumInstances() # Call from subclass itself
+Extra stuff...
+Number of instances: 2
+>>> Spam.printNumInstances() # Call original version
+Number of instances: 2
+```
+
+```shell
+>>> class Other(Spam): pass # Inherit static method verbatim
+>>> c = Other()
+>>> c.printNumInstances()
+Number of instances: 3
+```
+
+### 2. Class Method
+
+Interestingly, a class method can do similar work here—the following has the same behavior as the static method version listed earlier, but it uses a class method that receives the instance’s class in its first argument. Rather than hardcoding the class name, the class method uses the automatically passed class object generically:
+
+```python
+class Spam:
+ numInstances = 0 # Use class method instead of static
+ def __init__(self):
+ Spam.numInstances += 1
+ def printNumInstances(cls):
+ print("Number of instances: %s" % cls.numInstances)
+ printNumInstances = classmethod(printNumInstances)
+
+```
+
+```shell
+>>> from spam_class import Spam
+>>> a, b = Spam(), Spam()
+>>> a.printNumInstances() # Passes class to first argument
+Number of instances: 2
+>>> Spam.printNumInstances() # Also passes class to first argument
+Number of instances: 2
+
+```
+
+当使用classmethod时，调用进行时传递的是最具体的类，因此存在继承关系时，类空间参数会由子类覆盖父类。
+
+```python
+class Spam:
+ numInstances = 0 # Trace class passed in
+ def __init__(self):
+ Spam.numInstances += 1
+ def printNumInstances(cls):
+ print("Number of instances: %s %s" % (cls.numInstances, cls))
+ printNumInstances = classmethod(printNumInstances)
+class Sub(Spam):
+ def printNumInstances(cls): # Override a class method
+ print("Extra stuff...", cls) # But call back to original
+ Spam.printNumInstances()
+ printNumInstances = classmethod(printNumInstances)
+class Other(Spam): pass # Inherit class method verbatim
+```
+
+```shell
+>>> from spam_class import Spam, Sub, Other
+>>> x = Sub()
+>>> y = Spam()
+>>> x.printNumInstances() # Call from subclass instance
+Extra stuff... <class 'spam_class.Sub'>
+Number of instances: 2 <class 'spam_class.Spam'>
+>>> Sub.printNumInstances() # Call from subclass itself
+Extra stuff... <class 'spam_class.Sub'>
+Number of instances: 2 <class 'spam_class.Spam'>
+>>> y.printNumInstances() # Call from superclass instance
+Number of instances: 2 <class 'spam_class.Spam'>
+
+>>> z = Other() # Call from lower sub's instance
+>>> z.printNumInstances()
+Number of instances: 3 <class 'spam_class.Other'>
+
+```
+
+小结，由于class methods总是在实例树中receive the lowest class：
+
+-  Static methods and explicit class names may be a better solution for processing data local to a class.
+- Class methods may be better suited to processing data that may differ for each class in a hierarchy.
+
+```python
+class Spam:
+ numInstances = 0
+ def count(cls): # Per-class instance counters
+ cls.numInstances += 1 # cls is lowest class above instance
+ def __init__(self):
+ self.count() # Passes self.__class__ to count
+ count = classmethod(count)
+class Sub(Spam):
+ numInstances = 0
+ def __init__(self): # Redefines __init__
+ Spam.__init__(self)
+class Other(Spam): # Inherits __init__
+ numInstances = 0
+```
+
+```shell
+>>> from spam_class2 import Spam, Sub, Other
+>>> x = Spam()
+>>> y1, y2 = Sub(), Sub()
+>>> z1, z2, z3 = Other(), Other(), Other()
+>>> x.numInstances, y1.numInstances, z1.numInstances # Per-class data!
+(1, 2, 3)
+>>> Spam.numInstances, Sub.numInstances, Other.numInstances
+(1, 2, 3)
+
+```
+
