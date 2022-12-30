@@ -248,13 +248,6 @@
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/categories/Software-Engineering/</loc>
-    <lastmod>2022-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://cqlll.github.io/categories/Machine-Learning/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -263,6 +256,13 @@
   
   <url>
     <loc>https://cqlll.github.io/categories/Docker/</loc>
+    <lastmod>2022-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://cqlll.github.io/categories/Software-Engineering/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
