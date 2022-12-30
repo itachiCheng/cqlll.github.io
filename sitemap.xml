@@ -218,14 +218,14 @@
 
   
   <url>
-    <loc>https://cqlll.github.io/tags/Autobiography/</loc>
+    <loc>https://cqlll.github.io/tags/NLP/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cqlll.github.io/tags/NLP/</loc>
+    <loc>https://cqlll.github.io/tags/Autobiography/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -241,6 +241,13 @@
 
   
   <url>
+    <loc>https://cqlll.github.io/categories/Machine-Learning/</loc>
+    <lastmod>2022-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://cqlll.github.io/categories/Yesterday/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -249,13 +256,6 @@
   
   <url>
     <loc>https://cqlll.github.io/categories/Software-Engineering/</loc>
-    <lastmod>2022-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://cqlll.github.io/categories/Machine-Learning/</loc>
     <lastmod>2022-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
